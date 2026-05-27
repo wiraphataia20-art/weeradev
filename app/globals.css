@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0a0a0a;
+  --bg-card: #0f0f0f;
+  --fg: #ffffff;
+  --border: #1a1a1a;
+  --border-soft: #1e1e1e;
+  --m1: #888888;
+  --m2: #666666;
+  --m3: #555555;
+  --m4: #333333;
+  --m5: #2a2a2a;
+  --nav-bg: rgba(10, 10, 10, 0.75);
+  --accent: #5987DE;
+  --accent2: #00d4ff;
+}
+
+html[data-theme="light"] {
+  --bg: #f4f4f0;
+  --bg-card: #e8e8e4;
+  --fg: #0a0a0a;
+  --border: #d0d0cc;
+  --border-soft: #d8d8d4;
+  --m1: #3a3a3a;
+  --m2: #555555;
+  --m3: #666666;
+  --m4: #999999;
+  --m5: #bbbbbb;
+  --nav-bg: rgba(244, 244, 240, 0.75);
+  --accent: #5987DE;
+  --accent2: #0088bb;
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-geist-sans), -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+@keyframes glitch {
+  0%, 88%, 100% {
+    transform: translate(0);
+    text-shadow: none;
+  }
+  89% {
+    transform: translate(-3px, 1px);
+    text-shadow: 2px 0 #00d4ff;
+  }
+  91% {
+    transform: translate(3px, -1px);
+    text-shadow: -2px 0 #ff004c;
+  }
+  93% {
+    transform: translate(-2px, 2px);
+    text-shadow: 2px 0 #00d4ff;
+  }
+  95% {
+    transform: translate(2px, -2px);
+    text-shadow: -2px 0 #ff004c;
+  }
+  97% {
+    transform: translate(0);
+    text-shadow: none;
+  }
+}
+
+.glitch {
+  animation: glitch 5s infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    text-shadow: 0 0 20px #5987DE80, 0 0 40px #5987DE40;
+  }
+  50% {
+    text-shadow: 0 0 30px #5987DEaa, 0 0 60px #5987DE60, 0 0 80px #5987DE30;
+  }
+}
+
+.glow-text {
+  animation: glow-pulse 2.5s ease-in-out infinite;
+}
