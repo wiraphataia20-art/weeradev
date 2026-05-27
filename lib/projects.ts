@@ -27,7 +27,7 @@ export const projects: Project[] = [
     images: ["/all in cpe.png"],
     gradient: "linear-gradient(135deg, #0a1628 0%, #0d2137 50%, #0a3040 100%)",
     year: "2025",
-    status: "Live",
+    status: "Completed",
   },
   {
     slug: "lab-boy",
@@ -42,7 +42,7 @@ export const projects: Project[] = [
     images: ["/labboy.png"],
     gradient: "linear-gradient(135deg, #0a1a0f 0%, #0d2b18 50%, #0a3020 100%)",
     year: "2025",
-    status: "Live",
+    status: "Completed",
   },
   {
     slug: "smo-engineering-psru",
