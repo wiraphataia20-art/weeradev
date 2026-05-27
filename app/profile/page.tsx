@@ -29,7 +29,7 @@ export default function ProfilePage() {
       >
         <img
           src="/profile.png"
-          alt="Weerapat"
+          alt="Weeraphat"
           className="w-full h-full object-cover object-top"
         />
         <div
@@ -51,7 +51,7 @@ export default function ProfilePage() {
             className="text-5xl md:text-6xl font-bold tracking-tight mb-5"
             style={{ fontFamily: "var(--font-space-grotesk)", color: "var(--fg)" }}
           >
-            Weerapat Iamsanit
+            Weeraphat Iamsanit
           </motion.h1>
 
           <motion.div {...fadeUp(0.35)} className="flex flex-wrap items-center gap-2">
