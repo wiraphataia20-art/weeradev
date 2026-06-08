@@ -71,6 +71,6 @@ export const projects: Project[] = [
     images: ["/zerobot.png", "/logo zero bot.png"],
     gradient: "linear-gradient(135deg, #050d1a 0%, #0a1f3d 50%, #0d2a5a 100%)",
     year: "2026",
-    status: "Live",
+    status: "In Development",
   },
 ];

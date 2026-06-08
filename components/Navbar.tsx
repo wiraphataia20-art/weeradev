@@ -24,6 +24,15 @@ export default function Navbar() {
       </Link>
       <div className="flex items-center gap-8">
         <Link
+          href="/articles"
+          className="text-sm tracking-wider uppercase transition-colors duration-300"
+          style={{ color: "var(--m2)" }}
+          onMouseEnter={(e) => (e.currentTarget.style.color = "var(--fg)")}
+          onMouseLeave={(e) => (e.currentTarget.style.color = "var(--m2)")}
+        >
+          Articles
+        </Link>
+        <Link
           href="/projects"
           className="text-sm tracking-wider uppercase transition-colors duration-300"
           style={{ color: "var(--m2)" }}
