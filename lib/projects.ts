@@ -57,6 +57,20 @@ export const projects: Project[] = [
     images: ["/smo eit psru.png"],
     gradient: "linear-gradient(135deg, #0f1923 0%, #0a2a4a 50%, #0d3b6e 100%)",
     year: "2026",
+    status: "In Development",
+  },
+  {
+    slug: "zerobot",
+    title: "Zerobot",
+    description: "A Discord bot with AI chat, music playback, smart alerts, and link guard security — built to enhance server experience.",
+    longDescription:
+      "Zerobot is a feature-rich Discord bot designed to make server management and community engagement more enjoyable. It includes an AI-powered chat system using Groq, music playback with queue support, customizable alerts, and a link guard system to protect members from malicious URLs. Built with discord.js and Node.js, Zerobot is modular and easy to extend.",
+    tags: ["Node.js", "discord.js", "Groq AI", "Discord Bot"],
+    live: "https://discord.com/oauth2/authorize?client_id=1513567393803272342&permissions=8&integration_type=0&scope=bot+applications.commands",
+    preview: "/zerobot.png",
+    images: ["/zerobot.png", "/logo zero bot.png"],
+    gradient: "linear-gradient(135deg, #050d1a 0%, #0a1f3d 50%, #0d2a5a 100%)",
+    year: "2026",
     status: "Live",
   },
 ];
