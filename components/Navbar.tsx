@@ -20,7 +20,7 @@ export default function Navbar() {
         onMouseEnter={(e) => (e.currentTarget.style.color = "var(--accent2)")}
         onMouseLeave={(e) => (e.currentTarget.style.color = "var(--fg)")}
       >
-        WEERADEV
+        WEERAPHATDEV
       </Link>
       <div className="flex items-center gap-8">
         <Link
