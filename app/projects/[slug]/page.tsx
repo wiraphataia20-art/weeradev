@@ -29,7 +29,7 @@ export default function ProjectDetailPage() {
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
       <Navbar />
 
-      <main className="max-w-4xl mx-auto px-6 pt-32 pb-24">
+      <main className="max-w-4xl mx-auto px-4 md:px-6 pt-24 md:pt-32 pb-24">
 
         <motion.div {...fadeUp(0.1)} className="mb-12">
           <Link

@@ -8,7 +8,7 @@ export default function ArticlesPage() {
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
       <Navbar />
 
-      <main className="max-w-4xl mx-auto px-6 pt-36 pb-24">
+      <main className="max-w-4xl mx-auto px-4 md:px-6 pt-28 md:pt-36 pb-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

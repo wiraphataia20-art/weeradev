@@ -149,7 +149,7 @@ export default function Hero() {
 
       {/* Name */}
       <motion.div {...fadeUp(0.2)} className="relative mb-6 z-10">
-        <h1 className="text-[clamp(4rem,14vw,11rem)] font-black leading-none tracking-tighter select-none">
+        <h1 className="text-[clamp(2rem,12vw,11rem)] font-black leading-none tracking-tighter select-none">
           <span style={{ color: "#EBEBEB", fontFamily: "var(--font-playfair)", fontStyle: "italic" }}>WEERAPHAT</span>
           <span className="glow-text" style={{ color: "#5987DE", fontFamily: "var(--font-playfair)", fontStyle: "italic" }}>DEV</span>
         </h1>

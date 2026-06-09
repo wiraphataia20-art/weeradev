@@ -22,7 +22,7 @@ function ProjectRow({ project, index }: {
     >
       <Link href={`/projects/${project.slug}`}>
         <motion.div
-          className="group grid grid-cols-[48px_1fr_auto] gap-6 py-8 cursor-pointer"
+          className="group grid grid-cols-[36px_1fr_auto] md:grid-cols-[48px_1fr_auto] gap-3 md:gap-6 py-6 md:py-8 cursor-pointer"
           style={{ borderTop: "1px solid var(--border)" }}
           whileHover={{ x: 4 }}
           transition={{ duration: 0.2 }}
@@ -76,7 +76,7 @@ export default function ProjectsPage() {
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
       <Navbar />
 
-      <main className="max-w-4xl mx-auto px-6 pt-36 pb-24">
+      <main className="max-w-4xl mx-auto px-4 md:px-6 pt-28 md:pt-36 pb-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

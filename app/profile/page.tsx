@@ -17,10 +17,10 @@ const techStack = [
 
 export default function ProfilePage() {
   return (
-    <div className="min-h-screen flex" style={{ background: "var(--bg)" }}>
+    <div className="min-h-screen flex flex-col md:flex-row" style={{ background: "var(--bg)" }}>
       <Navbar />
 
-      {/* Left — sticky full-height photo */}
+      {/* Left — sticky full-height photo (desktop only) */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -38,8 +38,27 @@ export default function ProfilePage() {
         />
       </motion.div>
 
+      {/* Mobile — photo banner */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="md:hidden relative w-full mt-16 overflow-hidden"
+        style={{ height: 260 }}
+      >
+        <img
+          src="/profile.png"
+          alt="Weeraphat"
+          className="w-full h-full object-cover object-top"
+        />
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{ background: "linear-gradient(to bottom, transparent 50%, var(--bg) 100%)" }}
+        />
+      </motion.div>
+
       {/* Right — scrollable content */}
-      <div className="flex-1 px-12 md:px-16 pt-36 pb-24 flex flex-col gap-12">
+      <div className="flex-1 px-5 md:px-16 pt-8 md:pt-36 pb-24 flex flex-col gap-10 md:gap-12">
 
         <motion.p {...fadeUp(0.15)} className="text-xs tracking-[0.3em] uppercase" style={{ color: "var(--accent)" }}>
           Profile
