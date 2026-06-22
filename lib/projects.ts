@@ -62,7 +62,7 @@ export const projects: Project[] = [
   {
     slug: "zerobot",
     title: "Zerobot",
-    description: "A Discord bot with AI chat, music playback, smart alerts, and link guard security — built to enhance server experience.",
+    description: "A Discord bot with AI chat, music playback, smart alerts, and link guard security built to enhance server experience.",
     longDescription:
       "Zerobot is a feature-rich Discord bot designed to make server management and community engagement more enjoyable. It includes an AI-powered chat system using Groq, music playback with queue support, customizable alerts, and a link guard system to protect members from malicious URLs. Built with discord.js and Node.js, Zerobot is modular and easy to extend.",
     tags: ["Node.js", "discord.js", "Groq AI", "Discord Bot"],
@@ -72,5 +72,19 @@ export const projects: Project[] = [
     gradient: "linear-gradient(135deg, #050d1a 0%, #0a1f3d 50%, #0d2a5a 100%)",
     year: "2026",
     status: "In Development",
+  },
+  {
+    slug: "rov-scoreboard-control",
+    title: "ROV Scoreboard Controller",
+    description: "A real-time scoreboard control panel for ROV esports broadcasts that connects directly to OBS via WebSocket manage team names, logos, scores, and an auto-rotating info ticker live.",
+    longDescription:
+      "ROV Scoreboard Controller is a lightweight, browser-based control panel built for live ROV esports broadcasts. It connects to OBS through the OBS WebSocket protocol, letting casters update team names, logos, and scores, set round/best-of/game info, and run an auto-rotating ticker of sponsor or match messages all without touching OBS directly. Built as a single page app with no backend, it can be opened in a regular browser tab or embedded straight inside OBS as a Custom Browser Dock.",
+    tags: ["JavaScript", "OBS WebSocket", "HTML/CSS", "Esports Broadcast"],
+    live: "https://rov-scoreboard-control.vercel.app/",
+    preview: "/rov scoreboard control .png",
+    images: ["/rov scoreboard control .png"],
+    gradient: "linear-gradient(135deg, #050d1a 0%, #0a1f3d 50%, #0d2a5a 100%)",
+    year: "2026",
+    status: "Live",
   },
 ];
