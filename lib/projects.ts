@@ -49,10 +49,10 @@ export const projects: Project[] = [
     title: "Uni Sports Scoreboard",
     description: "A real-time university sports tournament platform with live match control, event tracking, automatic standings calculation, and a secure admin panel.",
     longDescription:
-      "Uni Sports Scoreboard is a full-stack web application built for managing university sports tournaments across football, futsal, basketball, and volleyball. Admins can create tournaments, register teams with logos, schedule matches, and control live match events including goals, cards, substitutions, and penalty results. Scores update in real time via Firebase Firestore, standings are recalculated automatically after each match, and a built-in timer tracks halves and extra time. The public-facing site shows live matches, match timelines, player stats, and standings — all without requiring a login.",
+      "Uni Sports Scoreboard is a full-stack web application built for managing university sports tournaments across football, futsal, basketball, and volleyball. Admins can create tournaments, register teams with logos, schedule matches, and control live match events including goals, cards, substitutions, and penalty results. Scores update in real time via Firebase Firestore, standings are recalculated automatically after each match, and a built-in timer tracks halves and extra time. The public-facing site shows live matches, match timelines, player stats, and standings all without requiring a login.",
     tags: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS", "Cloudinary"],
     github: "https://github.com/wiraphataia20-art/sports-scoreboard",
-    live: "https://sports-scoreboard-two.vercel.app/",
+    live: "https://sports-scoreboard-sepia.vercel.app/",
     preview: "/sports-scoreboard-logo.png",
     images: ["/sports-scoreboard-logo.png"],
     gradient: "linear-gradient(135deg, #0a1f0a 0%, #0f2d1a 50%, #0a2010 100%)",
