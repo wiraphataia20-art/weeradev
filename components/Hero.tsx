@@ -18,6 +18,8 @@ function VideoBg() {
     return () => timers.current.forEach(clearTimeout);
   }, []);
 
+  useEffect(() => { document.title = "WeeraDev"; }, []);
+
   const handleEnded = (index: number) => {
     if (index !== currentIdx) return;
     const next = (index + 1) % videos.length;

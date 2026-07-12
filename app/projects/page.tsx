@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
@@ -72,6 +73,7 @@ function ProjectRow({ project, index }: {
 }
 
 export default function ProjectsPage() {
+  useEffect(() => { document.title = "Projects WeeraDev"; }, []);
   return (
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
       <Navbar />

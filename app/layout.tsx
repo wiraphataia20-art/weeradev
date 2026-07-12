@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Space_Grotesk, Playfair_Display, Manrope } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import PageTransition from "@/components/PageTransition";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -33,7 +34,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "WeerDev Profile",
+  title: "WeeraDev",
   description: "Turning ideas into reality. Always learning, always building.",
 };
 
@@ -45,7 +46,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${playfair.variable} ${manrope.variable}`}>
       <body className="min-h-screen antialiased">
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <PageTransition>{children}</PageTransition>
+        </ThemeProvider>
       </body>
     </html>
   );

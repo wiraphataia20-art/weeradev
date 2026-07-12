@@ -1,9 +1,11 @@
 "use client";
 
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 
 export default function ArticlesPage() {
+  useEffect(() => { document.title = "Articles WeeraDev"; }, []);
   return (
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
       <Navbar />

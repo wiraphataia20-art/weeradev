@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { notFound, useParams } from "next/navigation";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -15,6 +16,10 @@ const fadeUp = (delay = 0) => ({
 export default function ProjectDetailPage() {
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
+
+  useEffect(() => {
+    if (project) document.title = `${project.title} WeeraDev`;
+  }, [project]);
 
   if (!project) return notFound();
 

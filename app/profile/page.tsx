@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 
@@ -16,6 +17,7 @@ const techStack = [
 ];
 
 export default function ProfilePage() {
+  useEffect(() => { document.title = "Profile WeeraDev"; }, []);
   return (
     <div className="min-h-screen flex flex-col md:flex-row" style={{ background: "var(--bg)" }}>
       <Navbar />
